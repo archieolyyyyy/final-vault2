@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Birthday Vault - Classified Access</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="grid-lines"></div>
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="vignette"></div>
+    <div class="container">
+        <header>
+            <div class="classified-banner">
+                <span class="classified-text">★ CLASSIFIED ★</span>
+            </div>
+            <h1 id="vault-title">
+                <span class="title-icon title-icon-left">🔒</span>
+                <span class="title-text">
+                    <span class="title-line">Birthday</span>
+                    <span class="title-line">Vault</span>
+                </span>
+                <span class="title-icon title-icon-right">🔒</span>
+            </h1>
+            <p class="subtitle">Security Level: Maximum</p>
+        </header>
+        <div class="light-switch-container">
+            <div class="switch-panel">
+                <div class="switch" id="light-switch">
+                    <div class="switch-track">
+                        <div class="switch-toggle"></div>
+                    </div>
+                </div>
+                <p class="switch-label">
+                    <span class="mode-text">Night Vision</span>
+                    <span class="status-indicator"></span>
+                </p>
+            </div>
+        </div>
+        <div class="cube-wrapper">
+            <div class="scan-overlay"></div>
+            <div class="corner-frame top-left"></div>
+            <div class="corner-frame top-right"></div>
+            <div class="corner-frame bottom-left"></div>
+            <div class="corner-frame bottom-right"></div>
+            
+            <div class="cube-container">
+                <div class="cube" id="cube">
+                    <div class="cube-face front">
+                        <div class="tile">8</div>
+                        <div class="tile">3</div>
+                        <div class="tile">7</div>
+                        <div class="tile">1</div>
+                        <div class="tile glow-number" data-number="2">
+                            <span class="number-text">2</span>
+                            <div class="fingerprint"></div>
+                        </div>
+                        <div class="tile">9</div>
+                        <div class="tile">4</div>
+                        <div class="tile">6</div>
+                        <div class="tile">5</div>
+                    </div>
+                    <div class="cube-face back">
+                        <div class="tile">6</div>
+                        <div class="tile">1</div>
+                        <div class="tile">9</div>
+                        <div class="tile">3</div>
+                        <div class="tile">7</div>
+                        <div class="tile">2</div>
+                        <div class="tile">8</div>
+                        <div class="tile">4</div>
+                        <div class="tile glow-number" data-number="0">
+                            <span class="number-text">0</span>
+                            <div class="fingerprint"></div>
+                        </div>
+                    </div>
+                    <div class="cube-face right">
+                        <div class="tile">5</div>
+                        <div class="tile">9</div>
+                        <div class="tile">2</div>
+                        <div class="tile">7</div>
+                        <div class="tile">1</div>
+                        <div class="tile">3</div>
+                        <div class="tile glow-number" data-number="0">
+                            <span class="number-text">0</span>
+                            <div class="fingerprint"></div>
+                        </div>
+                        <div class="tile">6</div>
+                        <div class="tile">8</div>
+                    </div>
+                    <div class="cube-face left">
+                        <div class="tile">4</div>
+                        <div class="tile">8</div>
+                        <div class="tile">1</div>
+                        <div class="tile">6</div>
+                        <div class="tile">3</div>
+                        <div class="tile">9</div>
+                        <div class="tile">2</div>
+                        <div class="tile">7</div>
+                        <div class="tile glow-number" data-number="5">
+                            <span class="number-text">5</span>
+                            <div class="fingerprint"></div>
+                        </div>
+                    </div>
+                    <div class="cube-face top">
+                        <div class="tile">3</div>
+                        <div class="tile">5</div>
+                        <div class="tile">8</div>
+                        <div class="tile">2</div>
+                        <div class="tile">4</div>
+                        <div class="tile">7</div>
+                        <div class="tile">1</div>
+                        <div class="tile">6</div>
+                        <div class="tile">9</div>
+                    </div>
+                    <div class="cube-face bottom">
+                        <div class="tile">7</div>
+                        <div class="tile">2</div>
+                        <div class="tile">4</div>
+                        <div class="tile">9</div>
+                        <div class="tile">5</div>
+                        <div class="tile">1</div>
+                        <div class="tile">3</div>
+                        <div class="tile">8</div>
+                        <div class="tile">6</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rotation-hint">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>Drag to Rotate</span>
+            </div>
+        </div>
+        <div class="vault-container" id="vault-icon">
+            <div class="vault-glow"></div>
+            <div class="vault-content">
+                <div class="vault-icon-wrapper">
+                    <svg class="vault-svg" width="60" height="60" viewBox="0 0 100 100">
+                        <defs>
+                            <linearGradient id="vaultGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#ffed4e;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="10" y="15" width="80" height="75" fill="url(#vaultGradient)" stroke="#fff" stroke-width="2" rx="5"/>
+                        <circle cx="50" cy="52" r="22" fill="#1a1a1a" stroke="#ffd700" stroke-width="3"/>
+                        <circle cx="50" cy="52" r="4" fill="#ffd700"/>
+                        <line x1="50" y1="52" x2="50" y2="35" stroke="#ffd700" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="50" y1="52" x2="62" y2="52" stroke="#ffd700" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="25" cy="25" r="3" fill="#1a1a1a"/>
+                        <circle cx="75" cy="25" r="3" fill="#1a1a1a"/>
+                        <circle cx="25" cy="80" r="3" fill="#1a1a1a"/>
+                        <circle cx="75" cy="80" r="3" fill="#1a1a1a"/>
+                    </svg>
+                    <div class="vault-ring"></div>
+                </div>
+                <div class="vault-text-wrapper">
+                    <span class="vault-label">ACCESS VAULT</span>
+                </div>
+            </div>
+        </div>
+        <div class="keypad-modal" id="keypad-modal">
+            <div class="keypad-backdrop"></div>
+            <div class="keypad-content">
+                <div class="keypad-header">
+                    <div class="security-icon">🔐</div>
+                    <h2>SECURITY ACCESS</h2>
+                    <p class="keypad-subtitle">Enter 4-Digit Code</p>
+                </div>
+                
+                <div class="display-container">
+                    <div class="display" id="display">
+                        <span class="digit">_</span>
+                        <span class="digit">_</span>
+                        <span class="digit">_</span>
+                        <span class="digit">_</span>
+                    </div>
+                    <div class="display-underline"></div>
+                </div>
+                
+                <div class="keypad-grid">
+                    <button class="key" data-num="1"><span>1</span></button>
+                    <button class="key" data-num="2"><span>2</span></button>
+                    <button class="key" data-num="3"><span>3</span></button>
+                    <button class="key" data-num="4"><span>4</span></button>
+                    <button class="key" data-num="5"><span>5</span></button>
+                    <button class="key" data-num="6"><span>6</span></button>
+                    <button class="key" data-num="7"><span>7</span></button>
+                    <button class="key" data-num="8"><span>8</span></button>
+                    <button class="key" data-num="9"><span>9</span></button>
+                    <button class="key special clear" id="clear-btn"><span>CLEAR</span></button>
+                    <button class="key" data-num="0"><span>0</span></button>
+                    <button class="key special enter" id="enter-btn"><span>ENTER</span></button>
+                </div>
+                
+                <button class="close-btn" id="close-keypad">
+                    <svg width="20" height="20" viewBox="0 0 24 24">
+                        <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="access-granted-modal" id="access-granted-modal">
+            <div class="access-granted-backdrop"></div>
+            <div class="access-granted-grid-bg"></div>
+            <div class="access-granted-content">
+                <div class="access-granted-icon">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                        <path d="M7 11V7a5 5 0 0 1 10 0"/>
+                        <path d="M17 7V4"/>
+                        <path d="M9 15h6" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <h2 class="access-granted-title">ACCESS GRANTED</h2>
+                <p class="access-granted-subtitle">Security clearance verified. You may proceed to the vault.</p>
+                <button class="access-granted-btn" id="proceed-btn">
+                    <span>PROCEED</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
